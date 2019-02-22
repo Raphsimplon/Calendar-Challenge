@@ -1,0 +1,244 @@
+body{
+    height: 600px;
+    width: auto;
+    // overflow: hidden;
+    background-color:lightblue;
+}
+
+$basiccolor : rgba(128, 185, 255, 1);
+$backgroundcolor : linear-gradient(180deg, rgba(0,0,0,1) 5%,rgba(128, 185, 255, 1) 90%);
+$backgroundcolor2: linear-gradient(to top, rgba(255,0,0,0) 5%, rgb(0, 0, 0));
+$backgroundcolor3: linear-gradient(180deg, rgb(255, 255, 255) 5%,rgba(128, 185, 255, 1) 90%);
+
+
+#affichageLabel {
+    display: none;
+}
+
+
+.deconav{
+    width:100%;
+    height: 5%;
+    background:black;
+
+}
+
+
+.navTop {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ letter-spacing: 4px;
+    height: 15%;
+
+    text-align: center;
+    background: rgb(0,0,0);
+    background:$backgroundcolor2 ;
+ }
+
+.navTop .title{
+
+color: white;
+font-weight: bold;
+background: -webkit-linear-gradient(#eee, rgb(43, 255, 255));
+background-clip: text;
+font-size: 52px;
+
+-webkit-text-fill-color: transparent;
+ }
+
+ .title h1 {
+
+font-size: 58px;
+
+ }
+.spiral {
+    z-index: 99;
+    position: absolute;
+    border:0;
+transform:rotate(90deg);
+margin-top: -190px;
+margin-left:10%;
+ height:400px;
+ width: 80px;
+}
+.spiral2 {
+    z-index: 99;
+    position: absolute;
+    border:0;
+transform:rotate(90deg);
+margin-top: -190px;
+margin-left:81%;
+ height:400px;
+ width: 80px;
+}
+
+
+
+.fas.fa-chevron-right{
+ display: inline-block;
+ margin-left: 91%;
+}
+
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+.fas.fa-chevron-left{
+    display: inline-block;
+    left: 0;
+}
+
+ #edition {
+
+    background:$basiccolor;
+    border-bottom-right-radius: 20%;
+
+ }
+
+
+ #edition button {
+     margin-top: 1%;
+ }
+
+ #edition title {
+
+    font-size: 12px;
+ }
+ 
+ #calendar td {
+    background-color:white;
+   }
+
+   #monthName{
+       background: $backgroundcolor3;
+   }
+
+
+
+#calendar {
+       margin-top: 1%;
+       background:white;
+       padding: 0;
+       margin: 0;
+       border-bottom-right-radius: 9%;
+       border-bottom-left-radius: 9%;
+       border-bottom: 1px solid black;
+
+       box-shadow: 0px 12px 2px 1px  rgba(0,0,0, .1 );
+
+
+   }
+
+   #calendar #days {
+background-color: lightgreen;
+   }
+
+
+   #calendar #weekend {
+    background-color: rgba(84, 84, 231, 0.746) ;
+       }
+    
+
+ #affichageEvent {
+     border: 0;
+ }
+
+
+ 
+ #event {
+     
+    border-bottom-left-radius: 20%;
+
+     background: $basiccolor;
+ }
+
+
+ #label-display {
+    text-align: center;
+
+    height: auto;
+    width: auto;
+    border:1px solid black;
+    border-radius: 10px;
+
+ }
+
+ #event-label {
+    text-align: center;
+
+    height: auto;
+    width: auto;
+    border:1px solid black;
+    border-radius: 10px;
+
+ }
+
+
+ footer {
+  margin-top:3%;
+     height: 10%;
+     background:$basiccolor;
+ }
+
+
+
+
+ @media screen and (max-width: 410px) {
+    .spiral{
+    margin-left: 35%;
+    }
+}
+
+   @media screen and (max-width: 410px) {
+    .spiral2{
+    display: none;
+    
+    }
+}
+
+@media screen and (min-width: 600px) {
+     a.icon {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+
+    @media screen and (max-width: 600px) {
+    .topnav.responsive 
+    {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+        }
+    
+    
+    .topnav.responsive a.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    
+    }
+
+
+    .topnav.responsive form {
+    display: block;
+    
+    }
+    } 
+
+
+

@@ -1,0 +1,41 @@
+{
+  "name": "calendar-challenge",
+  "version": "1.0.0",
+  "description": "A calendar project in Simplon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/jeanjacques42/calendar-challenge.git"
+  },
+  "keywords": [
+    "calendar",
+    "js"
+  ],
+  "author": "jeanjacques 42 nijaoui r.ambart.simp nijaoui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jeanjacques42/calendar-challenge/issues"
+  },
+  "homepage": "https://gitlab.com/jeanjacques42/calendar-challenge#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.24.0",
+    "popper.js": "^1.14.7",
+    "rome": "^2.1.22",
+    "tempusdominus-bootstrap-4": "^5.1.2"
+  }
+}
